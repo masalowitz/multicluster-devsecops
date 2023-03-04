@@ -13,8 +13,8 @@ clusterGroup:
   - stackrox
   - policies
   - devsecops-ci
-  - openshift-storage
-  - quay-enterprise
+#  - openshift-storage
+#  - quay-enterprise
 
 #  subscriptions:  OpenShift Operator subscriptions from OLM/OperatorHub
 #  - name: the Operator package name (required)
@@ -32,17 +32,17 @@ clusterGroup:
     acs:
       name: rhacs-operator  #packageName
       namespace: openshift-operators # operator namespace
-      channel: rhacs-3.71
+      channel: rhacs-3.74
 
-    odf:
-      name: odf-operator
-      namespace: openshift-storage
-      channel: stable-4.10
+#    odf:
+#      name: odf-operator
+#      namespace: openshift-storage
+#      channel: stable-4.10
 
-    quay:
-      name: quay-operator
-      namespace: openshift-operators
-      channel: stable-3.7
+#    quay:
+#      name: quay-operator
+#      namespace: openshift-operators
+#      channel: stable-3.7
 
 # The following section is used by
 # OpenShift GitOps (ArgoCD)
@@ -76,17 +76,17 @@ clusterGroup:
       project: opp
       path: charts/hub/acs/secured
 
-    storage:
-      name: storage
-      namespace: openshift-storage
-      project: opp
-      path: charts/hub/odf
+#    storage:
+#      name: storage
+#      namespace: openshift-storage
+#      project: opp
+#      path: charts/hub/odf
 
-    quay-registry:
-      name: quay-registry
-      namespace: quay-enterprise
-      project: opp
-      path: charts/hub/quay
+#    quay-registry:
+#      name: quay-registry
+#      namespace: quay-enterprise
+#      project: opp
+#      path: charts/hub/quay
 
     opp-policy:
       name: opp-policy
