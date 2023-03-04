@@ -33,6 +33,8 @@ clusterGroup:
       name: rhacs-operator  #packageName
       namespace: openshift-operators # operator namespace
       channel: rhacs-3.74
+      installPlanApproval: Automatic
+      sourceNamespace: openshift-marketplace
 
 #    odf:
 #      name: odf-operator
