@@ -15,7 +15,7 @@ clusterGroup:
   - devsecops-ci
   - minio
 #  - openshift-storage
-#  - quay-enterprise
+  - quay-enterprise
 
 #  subscriptions:  OpenShift Operator subscriptions from OLM/OperatorHub
 #  - name: the Operator package name (required)
@@ -42,10 +42,10 @@ clusterGroup:
 #      namespace: openshift-storage
 #      channel: stable-4.10
 
-#    quay:
-#      name: quay-operator
-#      namespace: openshift-operators
-#      channel: stable-3.7
+    quay:
+      name: quay-operator
+      namespace: openshift-operators
+      channel: stable-3.8
 
 # The following section is used by
 # OpenShift GitOps (ArgoCD)
