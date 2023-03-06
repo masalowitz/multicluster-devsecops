@@ -13,6 +13,7 @@ clusterGroup:
   - stackrox
   - policies
   - devsecops-ci
+  - minio
 #  - openshift-storage
 #  - quay-enterprise
 
@@ -77,6 +78,12 @@ clusterGroup:
       namespace: stackrox
       project: opp
       path: charts/hub/acs/secured
+
+    minio:
+      name: minio
+      namespace: minio
+      project: hub
+      path: charts/hub/sno-minio-deployment
 
 #    storage:
 #      name: storage
