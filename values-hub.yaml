@@ -91,11 +91,11 @@ clusterGroup:
 #      project: opp
 #      path: charts/hub/odf
 
-#    quay-registry:
-#      name: quay-registry
-#      namespace: quay-enterprise
-#      project: opp
-#      path: charts/hub/quay
+    quay-registry:
+      name: quay-registry
+      namespace: quay-enterprise
+      project: opp
+      path: charts/hub/quay
 
     opp-policy:
       name: opp-policy
