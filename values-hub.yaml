@@ -44,7 +44,9 @@ clusterGroup:
 
     quay:
       name: quay-operator
-      namespace: openshift-operators
+      namespace: quay-enterprise
+      source: redhat-operators
+      sourceNamespace: openshift-marketplace
       channel: stable-3.8
 
 # The following section is used by
