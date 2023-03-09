@@ -9,6 +9,7 @@ clusterGroup:
   - open-cluster-management
   - vault
   - golang-external-secrets
+  - openshift-compliance
   - rhacs-operator
   - stackrox
   - policies
@@ -44,6 +45,11 @@ clusterGroup:
       namespace: openshift-operators
       channel: stable-3.7
 
+    openshift-compliance:
+      name: compliance-operator
+      namespace: openshift-compliance
+      channel: release-0.1
+
 # The following section is used by
 # OpenShift GitOps (ArgoCD)
 # Projects are just ArgoCD groupings that can be filtered on.
@@ -51,6 +57,7 @@ clusterGroup:
   - hub
   - opp
   - external-secrets
+  - compliance
 
   applications:
     acm:
@@ -63,6 +70,12 @@ clusterGroup:
         kind: ManagedClusterInfo
         jsonPointers:
           - /spec/loggingCA
+
+    compliance-operator:
+      name: compliance-operator
+      namespace: openshift-compliance
+      project: compliance
+      path: charts/hub/compliance-operator
 
     acs-central:
       name: acs-central
