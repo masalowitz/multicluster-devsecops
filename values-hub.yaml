@@ -70,7 +70,7 @@ clusterGroup:
         jsonPointers:
           - /spec/loggingCA
 
-    compliance-operator:
+    openshift-compliance:
       name: compliance-operator
       namespace: openshift-compliance
       project: hub
