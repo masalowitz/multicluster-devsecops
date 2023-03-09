@@ -74,7 +74,7 @@ clusterGroup:
     compliance-operator:
       name: compliance-operator
       namespace: openshift-compliance
-      project: compliance
+      project: hub
       path: charts/hub/compliance-operator
 
     acs-central:
