@@ -57,7 +57,6 @@ clusterGroup:
   - hub
   - opp
   - external-secrets
-  - compliance
 
   applications:
     acm:
